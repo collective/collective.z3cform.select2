@@ -53,7 +53,7 @@ if (typeof(Faceted) != 'undefined') {
       jQuery('#' + jQuery(this).data('select2-open')).select2('open');
     });
     select.siblings('.select2-container')[0].style.minWidth = '200px';
-    select.addClass('init-select2-done')
+    select.addClass('init-select2-done');
   };
 
 

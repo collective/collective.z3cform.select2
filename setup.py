@@ -19,7 +19,7 @@ long_description = (
 
 setup(
     name='collective.z3cform.select2',
-    version='1.4.2.dev0',
+    version='2.0.0.dev0',
     description="select2 widget for z3c.form and eea.facetednavigation",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -45,8 +45,7 @@ setup(
     install_requires=[
         'setuptools',
         'plone.api',
-        'eea.facetednavigation < 10.0',
-        'eea.jquery >= 8.8',
+        'eea.facetednavigation>=10.0',
         'z3c.form >= 3.2.11',
     ],
     extras_require={

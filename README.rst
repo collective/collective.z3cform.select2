@@ -68,6 +68,12 @@ and then running ``bin/buildout``
 You need to install the collective.z3cform.select2 addon to register the
 select2 js library. In a facetednav, add a Select2 criterion.
 
+eea.facetednavigation
+---------------------
+
+Version 2.0.0+ is only working with eea.facetednavigation 10+.
+If you need to make it work with eea.facetednavigation < 10, use versions < 2.0.0
+
 
 Contribute
 ----------

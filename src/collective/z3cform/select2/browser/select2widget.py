@@ -1,11 +1,17 @@
 # -*- coding: utf-8 -*-
 from eea.facetednavigation.widgets import ViewPageTemplateFile
 from eea.facetednavigation.widgets.select.widget import Widget as SelectWidget
+from eea.facetednavigation.widgets.select.interfaces import ISelectSchema
+
 from eea.faceted.vocabularies.utils import compare
 
 from zope.i18n import MessageFactory
 
 _ = MessageFactory('collective.z3cform.select2')
+
+
+class ISelect2Schema(ISelectSchema):
+    """ """
 
 
 class Widget(SelectWidget):

@@ -15,6 +15,7 @@
     layer="collective.z3cform.select2.interfaces.ICollectiveZ3CformSelect2Layer"
     />
 
-  <faceted:widget factory=".select2widget.Widget" />
+  <faceted:widget factory=".select2widget.Widget"
+                  schema=".select2widget.ISelect2Schema" />
 
 </configure>

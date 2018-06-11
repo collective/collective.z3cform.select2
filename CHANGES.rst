@@ -2,10 +2,12 @@ Changelog
 =========
 
 
-1.4.2 (unreleased)
+2.0.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Make faceted widget compatible with eea.facetednavigation 10+.
+  This makes it no more compatible with eea.facetednavigation<10.
+  [gbastien]
 
 
 1.4.1 (2017-12-01)
