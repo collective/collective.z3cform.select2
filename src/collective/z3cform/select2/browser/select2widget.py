@@ -18,8 +18,6 @@ class Widget(SelectWidget):
     """ Widget
     """
 
-    view_js = '++resource++faceted.select2.view.js'
-
     # Widget properties
     widget_type = 'select2'
     widget_label = _('Select2')
