@@ -3,7 +3,9 @@
     xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="z3c.form">
 
-  <include file="adapters.zcml" />
+  <!-- This enables select2 widget for every fields using
+       zope.schema.interfaces.IList, zope.schema.interfaces.ITuple or zope.schema.interfaces.IUnorderedCollection -->
+  <!--include file="adapters.zcml" /-->
 
   <class class=".widget.TaxonomySelect2Widget">
     <require

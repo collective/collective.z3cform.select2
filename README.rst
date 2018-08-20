@@ -20,10 +20,11 @@ Features
   Select "Select2" criteria in facetednavigation and select a taxonomy.
 - select2 multivalued z3c.form widget that works nice with 2-level vocabulary
   created with collective.taxonomy
-- Upon installation, the default zc3form widget for List/Set of Choice will be
-  select2 based. If you don't want this behavior, you can exclude
-  collective.z3cform.select2.widget adapters.zcml with z3c.unconfigure.
 
+If you want to use the select2 widget instead the default zc3form widget for List/Set of Choice,
+just include file widget/adapters.zcml in another package policy like this :
+
+    <include package="collective.z3cform.select2.widget" file="adapters.zcml" />
 
 Theming
 -------

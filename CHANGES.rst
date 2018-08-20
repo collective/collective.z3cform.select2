@@ -5,8 +5,10 @@ Changelog
 2.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Do not replace z3cform default widget for List/Set of Choice by
+  select2 widget by default.  The widget/adapters.zcml will need to be included
+  manually so this behavior is applied.
+  [gbastien]
 
 2.0.0 (2018-06-20)
 ------------------
