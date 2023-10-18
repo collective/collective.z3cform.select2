@@ -226,27 +226,43 @@ if (typeof(Faceted) != 'undefined') {
       var html = jQuery('<dd>');
       var span = jQuery('<span class="faceted-select-criterion">');
       html.attr('id', 'criteria_' + this.wid + '_entries');
-      var element = jQuery(this.selected);
-      var value = element.val();
-      var label = element.attr('title');
-      var link = jQuery('<a href="#">[X]</a>');
 
-      link.attr('id', 'criteria_' + this.wid + '_' + value);
-      link.attr('title', 'Remove ' + label + ' filter');
-      link.click(function(evt){
-        widget.criteria_remove();
-        return false;
+
+      jQuery.each(this.selected, function(i, elem) {
+          var element = jQuery(elem);
+          var value = element.val();
+          var label = element.attr('title');
+          var link = jQuery('<a href="#">[X]</a>');
+          var to_remove = value;
+          if(!value) {
+            value = element.parent().find('a').text();
+            to_remove = null;
+          }
+
+          link.attr('id', 'criteria_' + widget.wid + '_' + value);
+          link.attr('title', 'Remove ' + label + ' filter');
+          link.click(function(evt){
+            widget.criteria_remove(to_remove, element);
+            return false;
+          });
+          span.append(link);
+          jQuery('<span>').text(label).appendTo(span);
+          html.append(span);
       });
-      span.append(link);
-      jQuery('<span>').text(label).appendTo(span);
-      html.append(span);
 
       return html;
     },
 
-    criteria_remove: function(){
-      this.select.val('');
-      this.do_query();
+    criteria_remove: function(value, element){
+      // Remove all
+      if(!value){
+        this.select.val(null).trigger("change.select2");
+        this.do_query();
+      }else{
+        element.attr('selected', false);
+        this.select.trigger("change.select2");
+        this.do_query(this.select);
+      }
     },
 
     count: function(sortcountable){

@@ -5,7 +5,8 @@ Changelog
 3.0.0b7 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix "current filters" faceted widget when used with multi-select2 (#11)
+  [laulaz]
 
 
 3.0.0b6 (2022-08-17)
