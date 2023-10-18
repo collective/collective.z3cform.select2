@@ -170,6 +170,7 @@ if (typeof(Faceted) != 'undefined') {
       if(current_values){
         var context = this;
         var selected = [];
+        this.select.val(current_values).trigger("change.select2");
         jQuery.each(current_values, function(i, value){
           var option_el = jQuery("option[value='" + value + "']", context.widget);
           jQuery(option_el).attr('selected', 'selected');

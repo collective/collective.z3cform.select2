@@ -5,6 +5,9 @@ Changelog
 3.0.0b7 (unreleased)
 --------------------
 
+- Fix selected URL values display in faceted select2 widget (#12)
+  [laulaz]
+
 - Fix "current filters" faceted widget when used with multi-select2 (#11)
   [laulaz]
 
