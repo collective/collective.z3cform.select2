@@ -41,4 +41,13 @@
           import_steps="jsregistry" />
   </genericsetup:upgradeSteps>
 
+  <genericsetup:upgradeSteps
+      source="2000"
+      destination="3000"
+      profile="collective.z3cform.select2:default">
+      <genericsetup:upgradeDepends
+          title="Update registered JS resources"
+          import_steps="plone.app.registry" />
+  </genericsetup:upgradeSteps>
+
 </configure>
