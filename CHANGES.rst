@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.0.0b7 (unreleased)
+3.0.0b7 (2023-10-20)
 --------------------
 
 - Fix selected URL values display in faceted select2 widget (#12)
