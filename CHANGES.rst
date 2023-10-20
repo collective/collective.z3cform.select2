@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.0.0b8 (unreleased)
+3.0.0b8 (2023-10-20)
 --------------------
 
 - Fix duplicate taxonomy select2 fields (#13)
