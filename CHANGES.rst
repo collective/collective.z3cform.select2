@@ -5,7 +5,8 @@ Changelog
 3.0.0b8 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix duplicate taxonomy select2 fields (#13)
+  [laulaz]
 
 
 3.0.0b7 (2023-10-20)
