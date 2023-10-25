@@ -157,7 +157,7 @@ if (typeof(Faceted) != 'undefined') {
     },
 
     reset: function(){
-      this.select.val("");
+      this.select.val(null).trigger("change.select2");
       this.selected = [];
     },
 

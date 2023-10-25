@@ -5,7 +5,8 @@ Changelog
 3.0.0b9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix "current filters" removing when used with multi-select2
+  [laulaz]
 
 
 3.0.0b8 (2023-10-20)
