@@ -28,6 +28,6 @@
     <value key="compile">False</value>
     <value key="jscompilation">++plone++static/collective-z3cform-select2-min-compiled.js</value>
     <value key="csscompilation">++plone++static/collective-z3cform-select2-compiled.css</value>
-    <value key="last_compilation">2023-10-20 13:30:00</value>
+    <value key="last_compilation">2023-10-25 09:30:00</value>
   </records>
 </registry>
