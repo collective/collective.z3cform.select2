@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-3.0.0b9 (unreleased)
+3.0.0b9 (2023-10-25)
 --------------------
 
 - Fix "current filters" removing when used with multi-select2
