@@ -326,9 +326,8 @@ if (typeof(Faceted) != 'undefined') {
     });
   };
 
-  jQuery(document).ready(function(){
-    jQuery(Faceted.Events).bind(
+  jQuery(Faceted.Events).on(
       Faceted.Events.INITIALIZE,
-      Faceted.initializeSelect2Widget);
-  });
+      Faceted.initializeSelect2Widget
+  );
 }

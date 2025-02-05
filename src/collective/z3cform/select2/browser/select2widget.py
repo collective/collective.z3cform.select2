@@ -37,7 +37,7 @@ class Widget(SelectWidget):
         if not default:
             return []
 
-        if isinstance(default, (str, unicode)):
+        if isinstance(default, str):
             default = [default, ]
 
         return default

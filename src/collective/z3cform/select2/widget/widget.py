@@ -5,15 +5,8 @@ from zope.component import adapter
 import zope.schema.interfaces
 
 from z3c.form import interfaces
+from z3c.form.browser.select import SelectWidget
 from z3c.form.widget import FieldWidget
-
-HAS_SELECT2 = False
-try:
-    # use provided select 2 widget if available
-    from plone.app.z3cform.widget import SelectWidget
-    HAS_SELECT2 = True
-except ImportError:
-    from z3c.form.browser.select import SelectWidget
 
 
 class ITaxonomySelect2Widget(Interface):
@@ -47,7 +40,7 @@ class ISingleSelect2Widget(Interface):
 
 @implementer(ISingleSelect2Widget, interfaces.ISelectWidget)
 class SingleSelect2Widget(SelectWidget):
-    klass = HAS_SELECT2 and u"single-select2-widget noinit" or u"single-select2-widget"
+    klass = "single-select2-widget"
 
     @property
     def placeholder(self):
@@ -84,7 +77,7 @@ class IMultiSelect2Widget(Interface):
 
 @implementer(IMultiSelect2Widget, interfaces.ISelectWidget)
 class MultiSelect2Widget(SingleSelect2Widget):
-    klass = HAS_SELECT2 and u"multi-select2-widget noinit" or u"multi-select2-widget"
+    klass = "multi-select2-widget"
 
     @property
     def items(self):

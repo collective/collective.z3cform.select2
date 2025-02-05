@@ -42,9 +42,9 @@ class TestSingleSelect2Widget(unittest.TestCase):
             IPageTemplate, name='input')
         self.assertEqual(
             widget.render(),
-            u'\n<select id="widget_id" name="widget.name:list" '
-            u'class="single-select2-widget" readonly="" accesskey="" '
-            u'size="1">\n</select>\n\n')
+            '\n<select id="widget_id" name="widget.name:list" '
+            'class="single-select2-widget" readonly="" accesskey="" '
+            'size="1">\n\n</select>\n\n')
 
         # provide a vocabulary. We can do this by defining a source providing
         # ``ITerms``. This source uses descriminators which will fit our setup.
@@ -54,14 +54,15 @@ class TestSingleSelect2Widget(unittest.TestCase):
         widget.update()
         self.assertEqual(
             widget.render(),
-            u'\n<select id="widget_id" name="widget.name:list" class="'
-            u'single-select2-widget" readonly="" accesskey="" size="1">\n'
-            u'<option id="widget-id-novalue" value="--NOVALUE--" '
-            u'data-css="--NOVALUE--">No value</option>\n'
-            u'<option id="widget-id-0" value="a" data-css="a">a</option>\n'
-            u'<option id="widget-id-1" value="b" data-css="b">b</option>\n'
-            u'<option id="widget-id-2" value="c" data-css="c">c</option>\n'
-            u'</select>\n\n')
+            '\n<select id="widget_id" name="widget.name:list" class="'
+            'single-select2-widget" readonly="" '
+            'accesskey="" size="1">\n'
+            '<option id="widget-id-novalue" value="--NOVALUE--" '
+            'selected="selected" data-css="--NOVALUE--">No value</option\n   >'
+            '<option id="widget-id-0" value="a" data-css="a">a</option\n >'
+            '<option id="widget-id-1" value="b" data-css="b">b</option\n >'
+            '<option id="widget-id-2" value="c" data-css="c">c</option\n >\n'
+            '</select>\n\n')
 
 
 class TestMultiSelect2Widget(unittest.TestCase):
@@ -83,9 +84,9 @@ class TestMultiSelect2Widget(unittest.TestCase):
             IPageTemplate, name='input')
         self.assertEqual(
             widget.render(),
-            u'\n<select id="widget_id" name="widget.name:list" '
-            u'class="multi-select2-widget" readonly="" accesskey="" '
-            u'multiple="" size="1">\n</select>\n\n')
+            '\n<select id="widget_id" name="widget.name:list" '
+            'class="multi-select2-widget" readonly="" accesskey="" '
+            'multiple="" size="1">\n\n</select>\n\n')
 
         # provide a vocabulary. We can do this by defining a source providing
         # ``ITerms``. This source uses descriminators which will fit our setup.
@@ -95,10 +96,10 @@ class TestMultiSelect2Widget(unittest.TestCase):
         widget.update()
         self.assertEqual(
             widget.render(),
-            u'\n<select id="widget_id" name="widget.name:list" class="'
-            u'multi-select2-widget" readonly="" accesskey="" multiple="" '
-            u'size="1">\n'
-            u'<option id="widget-id-0" value="a" data-css="a">a</option>\n'
-            u'<option id="widget-id-1" value="b" data-css="b">b</option>\n'
-            u'<option id="widget-id-2" value="c" data-css="c">c</option>\n'
-            u'</select>\n\n')
+            '\n<select id="widget_id" name="widget.name:list" class="'
+            'multi-select2-widget" readonly="" '
+            'accesskey="" multiple="" size="1">\n'
+            '<option id="widget-id-0" value="a" data-css="a">a</option\n >'
+            '<option id="widget-id-1" value="b" data-css="b">b</option\n >'
+            '<option id="widget-id-2" value="c" data-css="c">c</option\n >\n'
+            '</select>\n\n')
