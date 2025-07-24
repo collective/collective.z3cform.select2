@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
-from zope.interface import Interface, implementer
-from zope.component import adapter
-
-import zope.schema.interfaces
-
 from z3c.form import interfaces
 from z3c.form.browser.select import SelectWidget
 from z3c.form.widget import FieldWidget
+from zope.component import adapter
+from zope.interface import implementer
+from zope.interface import Interface
+
+import zope.schema.interfaces
 
 
 class ITaxonomySelect2Widget(Interface):
-    """ Marker interface for the taxonomy select widget """
+    """Marker interface for the taxonomy select widget"""
 
 
 @implementer(ITaxonomySelect2Widget, interfaces.ISelectWidget)
