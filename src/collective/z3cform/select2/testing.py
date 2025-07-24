@@ -18,7 +18,7 @@ class CollectiveZ3CformSelect2Layer(PloneSandboxLayer):
         self.loadZCML(package=collective.z3cform.select2)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'collective.z3cform.select2:default')
+        applyProfile(portal, "collective.z3cform.select2:default")
 
 
 COLLECTIVE_Z3CFORM_SELECT2_FIXTURE = CollectiveZ3CformSelect2Layer()
@@ -26,13 +26,13 @@ COLLECTIVE_Z3CFORM_SELECT2_FIXTURE = CollectiveZ3CformSelect2Layer()
 
 COLLECTIVE_Z3CFORM_SELECT2_INTEGRATION_TESTING = IntegrationTesting(
     bases=(COLLECTIVE_Z3CFORM_SELECT2_FIXTURE,),
-    name='CollectiveZ3CformSelect2Layer:IntegrationTesting'
+    name="CollectiveZ3CformSelect2Layer:IntegrationTesting",
 )
 
 
 COLLECTIVE_Z3CFORM_SELECT2_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_Z3CFORM_SELECT2_FIXTURE,),
-    name='CollectiveZ3CformSelect2Layer:FunctionalTesting'
+    name="CollectiveZ3CformSelect2Layer:FunctionalTesting",
 )
 
 
@@ -40,7 +40,7 @@ COLLECTIVE_Z3CFORM_SELECT2_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
         COLLECTIVE_Z3CFORM_SELECT2_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE
+        z2.ZSERVER_FIXTURE,
     ),
-    name='CollectiveZ3CformSelect2Layer:AcceptanceTesting'
+    name="CollectiveZ3CformSelect2Layer:AcceptanceTesting",
 )

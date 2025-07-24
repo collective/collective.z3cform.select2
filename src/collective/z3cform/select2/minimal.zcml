@@ -10,7 +10,6 @@
   <include package="z3c.form" file="meta.zcml" />
   <include package="z3c.form" />
   <include package="eea.facetednavigation" />
-  <include package="eea.jquery" />
 
   <include package=".browser" />
   <include package=".widget" />

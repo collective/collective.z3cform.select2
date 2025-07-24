@@ -3,4 +3,5 @@
 
 from zope.i18nmessageid import MessageFactory
 
-_ = MessageFactory('collective.z3cform.select2')
+
+_ = MessageFactory("collective.z3cform.select2")

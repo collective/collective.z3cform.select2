@@ -69,6 +69,14 @@ and then running ``bin/buildout``
 You need to install the collective.z3cform.select2 addon to register the
 select2 js library. In a facetednav, add a Select2 criterion.
 
+
+Versions
+--------
+
+- Version 4.x is for Plone 6.1+ only
+- Version 3.x is for Plone 4 / 5
+
+
 eea.facetednavigation
 ---------------------
 
