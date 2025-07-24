@@ -1,7 +1,7 @@
-.. image:: https://travis-ci.org/collective/collective.z3cform.select2.svg?branch=master
-    :target: https://travis-ci.org/collective/collective.z3cform.select2
-.. image:: https://coveralls.io/repos/collective/collective.z3cform.select2/badge.png?branch=master
-   :target: https://coveralls.io/r/collective/collective.z3cform.select2?branch=master
+.. image:: https://github.com/collective/collective.z3cform.select2/actions/workflows/main.yml/badge.svg
+    :target: https://github.com/collective/collective.z3cform.select2/actions/workflows/main.yml
+.. image:: https://coveralls.io/repos/github/collective/collective.z3cform.select2/badge.svg
+    :target: https://coveralls.io/github/collective/collective.z3cform.select2
 
 
 .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
