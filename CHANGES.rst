@@ -5,7 +5,10 @@ Changelog
 4.0.0b1 (unreleased)
 --------------------
 
-- Add Plone 6.1 compatibility, drop Plone 4 / 5 compatibility
+- Add Plone 6.2 compatibility, drop Plone 4 / 5 / 6.1 compatibility
+  [laulaz]
+
+- Switch to native namespace packages (PEP 420)
   [laulaz]
 
 
