@@ -73,7 +73,7 @@ select2 js library. In a facetednav, add a Select2 criterion.
 Versions
 --------
 
-- Version 4.x is for Plone 6.1+ only
+- Version 4.x is for Plone 6.2+ only
 - Version 3.x is for Plone 4 / 5
 
 

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """Installer for the collective.z3cform.select2 package."""
 
-from setuptools import find_packages
 from setuptools import setup
 
 
@@ -27,7 +26,7 @@ setup(
     classifiers=[
         "Environment :: Web Environment",
         "Framework :: Plone",
-        "Framework :: Plone :: 6.1",
+        "Framework :: Plone :: 6.2",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
         "Operating System :: OS Independent",
         "Programming Language :: Python",
@@ -38,13 +37,10 @@ setup(
     author_email="vincent.fretin@gmail.com",
     url="https://pypi.python.org/pypi/collective.z3cform.select2",
     license="GPL version 2",
-    packages=find_packages("src", exclude=["ez_setup"]),
-    namespace_packages=["collective", "collective.z3cform"],
-    package_dir={"": "src"},
     include_package_data=True,
     zip_safe=False,
+    python_requires=">=3.10",
     install_requires=[
-        "setuptools",
         "plone.api",
         "eea.facetednavigation",
         "z3c.form",
